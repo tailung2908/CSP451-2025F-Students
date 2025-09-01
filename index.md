@@ -3,174 +3,675 @@ layout: default
 title: CSP451 - Cloud Computing (Fall 2025)
 ---
 
-# 🌐 CSP451 - Cloud Computing
-## Fall 2025 Student Resources
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSP451 - Cloud Computing | Fall 2025</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #0d47a1;
+            --secondary-color: #1976d2;
+            --accent-color: #42a5f5;
+            --success-color: #2e7d32;
+            --warning-color: #f57c00;
+            --dark-color: #263238;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"></path></svg>') center/cover;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card .card-header {
+            background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
+            color: white;
+            border: none;
+            font-weight: 600;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .quick-access-btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem;
+        }
+        
+        .quick-access-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        .week-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .week-table thead {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .week-table tbody tr:hover {
+            background-color: #f8f9fa;
+            transform: scale(1.01);
+            transition: all 0.2s ease;
+        }
+        
+        .week-number {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .assignment-link, .notes-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .assignment-link:hover, .notes-link:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
+        .info-banner {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-left: 5px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .footer-section {
+            background: var(--dark-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 2rem 0;
+            }
+            
+            .quick-access-btn {
+                width: 100%;
+                margin: 0.25rem 0;
+                justify-content: center;
+            }
+            
+            .week-table {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
 
-Welcome to the CSP451 Cloud Computing course student resource portal. This site contains all the materials you need to succeed in the course.
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container hero-content">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="bi bi-cloud-fill me-3"></i>CSP451 - Cloud Computing
+                </h1>
+                <p class="lead mb-4">Fall 2025 Student Resources | Seneca Polytechnic</p>
+                <p class="fs-5 mb-4">Your comprehensive guide to mastering cloud computing technologies and practices.</p>
+                
+                <!-- Quick Access Buttons -->
+                <div class="d-flex flex-wrap justify-content-center mt-4">
+                    <a href="Fall 2025 Course Addendum" class="quick-access-btn btn btn-light btn-lg">
+                        <i class="bi bi-calendar-check"></i>
+                        Course Schedule & Policies
+                    </a>
+                    <a href="Quick Reference - Submission Requirements" class="quick-access-btn btn btn-outline-light btn-lg">
+                        <i class="bi bi-file-earmark-check"></i>
+                        Submission Guidelines
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
----
+<div class="container my-5">
 
-## 📋 Quick Access
+    <!-- Course Materials Section -->
+    <section id="course-materials" class="mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">
+                    <i class="bi bi-journal-bookmark-fill text-primary me-2"></i>
+                    Course Materials
+                </h2>
+            </div>
+        </div>
 
-<div class="quick-links">
-  <a href="Fall 2025 Course Addendum" class="btn btn-primary">📅 Course Schedule & Policies</a>
-  <a href="Quick Reference - Submission Requirements" class="btn btn-secondary">📝 Submission Guidelines</a>
+        <!-- Assignment Briefs Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card feature-card">
+                    <div class="card-header">
+                        <h3 class="mb-0">
+                            <i class="bi bi-clipboard-check me-2"></i>
+                            Assignment Briefs
+                        </h3>
+                        <small>Complete assignment instructions and requirements for each week</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table week-table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th width="8%">Week</th>
+                                        <th width="50%">Topic</th>
+                                        <th width="42%">Assignment Brief</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="week-number">1</span></td>
+                                        <td><i class="bi bi-github text-primary me-2"></i>Introduction to GitHub and Version Control</td>
+                                        <td><a href="Assignment Brief/Week 1/Week 1 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 1 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">2</span></td>
+                                        <td><i class="bi bi-diagram-3 text-primary me-2"></i>Advanced Git Branching and Collaboration</td>
+                                        <td><a href="Assignment Brief/Week 2/Week 2 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 2 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">3</span></td>
+                                        <td><i class="bi bi-markdown text-primary me-2"></i>Markdown Documentation and README Files</td>
+                                        <td><a href="Assignment Brief/Week 3/Week 3 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 3 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">4</span></td>
+                                        <td><i class="bi bi-cloud-upload text-primary me-2"></i>Azure Fundamentals and Virtual Networks</td>
+                                        <td><a href="Assignment Brief/Week 4/Week 4 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 4 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">5</span></td>
+                                        <td><i class="bi bi-shield-check text-primary me-2"></i>Network Security Groups and Route Tables</td>
+                                        <td><a href="Assignment Brief/Week 5/Week 5 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 5 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">6</span></td>
+                                        <td><i class="bi bi-server text-primary me-2"></i>Azure Virtual Machines and Linux Setup</td>
+                                        <td><a href="Assignment Brief/Week 6/Week 6 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 6 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">7</span></td>
+                                        <td><i class="bi bi-code-square text-primary me-2"></i>ARM Templates and Infrastructure as Code</td>
+                                        <td><a href="Assignment Brief/Week 7/Week 7 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 7 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">8</span></td>
+                                        <td><i class="bi bi-shield-fill-exclamation text-primary me-2"></i>Azure Firewall and Advanced Networking</td>
+                                        <td><a href="Assignment Brief/Week 8/Week 8 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 8 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr class="table-warning">
+                                        <td><span class="week-number">9</span></td>
+                                        <td><i class="bi bi-presentation text-warning me-2"></i><strong>Demo Presentation</strong></td>
+                                        <td><a href="Assignment Brief/Week 9/Week 9 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 9 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">10</span></td>
+                                        <td><i class="bi bi-box text-primary me-2"></i>Docker Fundamentals and Containerization</td>
+                                        <td><a href="Assignment Brief/Week 10/Week 10 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 10 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">11</span></td>
+                                        <td><i class="bi bi-layers text-primary me-2"></i>Docker Images and Registry Management</td>
+                                        <td><a href="Assignment Brief/Week 11/Week 11 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 11 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">12</span></td>
+                                        <td><i class="bi bi-arrow-repeat text-primary me-2"></i>CI/CD with GitHub Actions</td>
+                                        <td><a href="Assignment Brief/Week 12/Week 12 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 12 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">13</span></td>
+                                        <td><i class="bi bi-gear text-primary me-2"></i>Final Project Development</td>
+                                        <td><a href="Assignment Brief/Week 13/Week 13 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 13 Assignment Brief</a></td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <td><span class="week-number">14</span></td>
+                                        <td><i class="bi bi-trophy text-success me-2"></i><strong>Final Project Due</strong></td>
+                                        <td><a href="Assignment Brief/Week 14/Week 14 - Assignment Brief" class="assignment-link"><i class="bi bi-file-earmark-text me-1"></i>Week 14 Assignment Brief</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Notes Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card feature-card">
+                    <div class="card-header">
+                        <h3 class="mb-0">
+                            <i class="bi bi-journal-text me-2"></i>
+                            Weekly Study Notes
+                        </h3>
+                        <small>Essential concepts and preparation materials for each week</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table week-table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th width="8%">Week</th>
+                                        <th width="50%">Topic</th>
+                                        <th width="42%">Study Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="week-number">1</span></td>
+                                        <td><i class="bi bi-github text-primary me-2"></i>GitHub and Version Control Basics</td>
+                                        <td><a href="Weekly Notes/Week 1/Week 1 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 1 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">2</span></td>
+                                        <td><i class="bi bi-diagram-3 text-primary me-2"></i>Git Branching and Collaboration</td>
+                                        <td><a href="Weekly Notes/Week 2/Week 2 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 2 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">3</span></td>
+                                        <td><i class="bi bi-markdown text-primary me-2"></i>Documentation and Markdown</td>
+                                        <td><a href="Weekly Notes/Week 3/Week 3 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 3 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">4</span></td>
+                                        <td><i class="bi bi-cloud-upload text-primary me-2"></i>Azure Virtual Networks</td>
+                                        <td><a href="Weekly Notes/Week 4/Week 4 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 4 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">5</span></td>
+                                        <td><i class="bi bi-shield-check text-primary me-2"></i>Network Security and Routing</td>
+                                        <td><a href="Weekly Notes/Week 5/Week 5 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 5 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">6</span></td>
+                                        <td><i class="bi bi-server text-primary me-2"></i>Virtual Machines and Linux</td>
+                                        <td><a href="Weekly Notes/Week 6/Week 6 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 6 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">7</span></td>
+                                        <td><i class="bi bi-code-square text-primary me-2"></i>Infrastructure as Code</td>
+                                        <td><a href="Weekly Notes/Week 7/Week 7 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 7 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">8</span></td>
+                                        <td><i class="bi bi-shield-fill-exclamation text-primary me-2"></i>Azure Firewall and Security</td>
+                                        <td><a href="Weekly Notes/Week 8/Week 8 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 8 Student Notes</a></td>
+                                    </tr>
+                                    <tr class="table-warning">
+                                        <td><span class="week-number">9</span></td>
+                                        <td><i class="bi bi-presentation text-warning me-2"></i><strong>Presentation Skills</strong></td>
+                                        <td><a href="Weekly Notes/Week 9/Week 9 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 9 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">10</span></td>
+                                        <td><i class="bi bi-box text-primary me-2"></i>Docker and Containers</td>
+                                        <td><a href="Weekly Notes/Week 10/Week 10 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 10 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">11</span></td>
+                                        <td><i class="bi bi-layers text-primary me-2"></i>Container Management</td>
+                                        <td><a href="Weekly Notes/Week 11/Week 11 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 11 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">12</span></td>
+                                        <td><i class="bi bi-arrow-repeat text-primary me-2"></i>CI/CD Pipelines</td>
+                                        <td><a href="Weekly Notes/Week 12/Week 12 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 12 Student Notes</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="week-number">13</span></td>
+                                        <td><i class="bi bi-gear text-primary me-2"></i>Project Development</td>
+                                        <td><a href="Weekly Notes/Week 13/Week 13 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 13 Student Notes</a></td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <td><span class="week-number">14</span></td>
+                                        <td><i class="bi bi-trophy text-success me-2"></i><strong>Project Completion</strong></td>
+                                        <td><a href="Weekly Notes/Week 14/Week 14 - Student Notes" class="notes-link"><i class="bi bi-journal me-1"></i>Week 14 Student Notes</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Resources Section -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">
+                    <i class="bi bi-folder-fill text-primary me-2"></i>
+                    Additional Resources
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card feature-card h-100">
+                    <div class="card-header">
+                        <h4 class="mb-0">
+                            <i class="bi bi-book me-2"></i>
+                            Reference Materials
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="resource-card">
+                            <i class="bi bi-file-pdf text-danger me-2"></i>
+                            <a href="References/Cloud_Computing_Job_Interview_Preparation_Guide_(AI-Era_Edition).pdf" class="assignment-link">Cloud Computing Job Interview Guide</a>
+                        </div>
+                        <div class="resource-card">
+                            <i class="bi bi-file-pdf text-danger me-2"></i>
+                            <a href="References/CSP451-Other-reference_Azure_ARM_Template_-Automation.pdf" class="assignment-link">Azure ARM Template Automation Guide</a>
+                        </div>
+                        <div class="resource-card">
+                            <i class="bi bi-file-pdf text-danger me-2"></i>
+                            <a href="References/CSP451-Other-reference_Azure_Multi-Web_App_Setup_Guide.pdf" class="assignment-link">Azure Multi-Web App Setup Guide</a>
+                        </div>
+                        <div class="resource-card">
+                            <i class="bi bi-markdown text-primary me-2"></i>
+                            <a href="References/CSP451-Other-reference_Final-Project-Reference" class="assignment-link">Final Project Reference</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card feature-card h-100">
+                    <div class="card-header">
+                        <h4 class="mb-0">
+                            <i class="bi bi-bullseye me-2"></i>
+                            Important Guidelines
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="resource-card">
+                            <i class="bi bi-calendar-check text-primary me-2"></i>
+                            <a href="Fall 2025 Course Addendum" class="assignment-link">Fall 2025 Course Addendum</a>
+                            <small class="d-block text-muted mt-1">Complete course schedule and policies</small>
+                        </div>
+                        <div class="resource-card">
+                            <i class="bi bi-file-earmark-check text-primary me-2"></i>
+                            <a href="Quick Reference - Submission Requirements" class="assignment-link">Quick Reference - Submission Requirements</a>
+                            <small class="d-block text-muted mt-1">Assignment submission guidelines</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Information Section -->
+    <section class="info-banner mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center mb-4">
+                    <i class="bi bi-mortarboard-fill text-primary me-2"></i>
+                    Course Information
+                </h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <h5><i class="bi bi-info-circle text-primary me-2"></i>Course Details</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Course Code:</strong> CSP451</li>
+                            <li><strong>Course Name:</strong> Cloud Computing</li>
+                            <li><strong>Semester:</strong> Fall 2025</li>
+                            <li><strong>Instructor:</strong> David Chan</li>
+                            <li><strong>Contact:</strong> david.chan2@senecapolytechnic.ca</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <h5><i class="bi bi-calendar-event text-primary me-2"></i>Key Dates</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Course Start:</strong> September 1, 2025</li>
+                            <li><strong>Demo Presentation:</strong> Week 9</li>
+                            <li><strong>Final Project Due:</strong> Week 14 (December 1-7, 2025)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row mt-3">
+                    <div class="col-md-4 mb-3">
+                        <h5><i class="bi bi-coin text-warning me-2"></i>Budget Management</h5>
+                        <ul class="list-unstyled small">
+                            <li><strong>Initial Credit:</strong> 50-100 Azure credits</li>
+                            <li><strong>Success Criteria:</strong> Maintain positive balance</li>
+                            <li><strong>Full marks for proper budget management</strong></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4 mb-3">
+                        <h5><i class="bi bi-upload text-success me-2"></i>Submission Format</h5>
+                        <ul class="list-unstyled small">
+                            <li><strong>Format:</strong> PDF documents</li>
+                            <li><strong>Include:</strong> Screenshots & explanations</li>
+                            <li><strong>GitHub:</strong> No instructor collaboration needed</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-4 mb-3">
+                        <h5><i class="bi bi-camera-video text-primary me-2"></i>Presentations</h5>
+                        <ul class="list-unstyled small">
+                            <li><strong>Format:</strong> Unlisted YouTube videos</li>
+                            <li><strong>Recording:</strong> Teams/Zoom with camera on</li>
+                            <li><strong>Content:</strong> Slides visible throughout</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card feature-card">
+                    <div class="card-header text-center">
+                        <h3 class="mb-0">
+                            <i class="bi bi-rocket-takeoff me-2"></i>
+                            Getting Started
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <span class="badge bg-primary rounded-pill me-3">1</span>
+                                    <div>
+                                        <h6><strong>Review Course Schedule</strong></h6>
+                                        <p class="small mb-0">Check the <a href="Fall 2025 Course Addendum" class="assignment-link">Course Addendum</a> for complete schedule and policies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <span class="badge bg-primary rounded-pill me-3">2</span>
+                                    <div>
+                                        <h6><strong>Check Submission Requirements</strong></h6>
+                                        <p class="small mb-0">Review the <a href="Quick Reference - Submission Requirements" class="assignment-link">Submission Requirements</a> guide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <span class="badge bg-primary rounded-pill me-3">3</span>
+                                    <div>
+                                        <h6><strong>Start Week 1 Materials</strong></h6>
+                                        <p class="small mb-0">Begin with <a href="Assignment Brief/Week 1/Week 1 - Assignment Brief" class="assignment-link">Week 1 Assignment Brief</a> and <a href="Weekly Notes/Week 1/Week 1 - Student Notes" class="notes-link">Student Notes</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="d-flex align-items-start">
+                                    <span class="badge bg-primary rounded-pill me-3">4</span>
+                                    <div>
+                                        <h6><strong>Explore References</strong></h6>
+                                        <p class="small mb-0">Browse additional resources for supplementary learning materials.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="mb-5">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card feature-card">
+                    <div class="card-header text-center">
+                        <h3 class="mb-0">
+                            <i class="bi bi-question-circle me-2"></i>
+                            Support & Help
+                        </h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="mb-3">If you need assistance:</p>
+                        <div class="row">
+                            <div class="col-6 mb-2">
+                                <i class="bi bi-journal-bookmark text-primary d-block mb-2" style="font-size: 1.5rem;"></i>
+                                <small>Review course materials and reference guides</small>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <i class="bi bi-file-check text-primary d-block mb-2" style="font-size: 1.5rem;"></i>
+                                <small>Check submission requirements for clarity</small>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <i class="bi bi-person-workspace text-primary d-block mb-2" style="font-size: 1.5rem;"></i>
+                                <small>Contact instructor during office hours</small>
+                            </div>
+                            <div class="col-6 mb-2">
+                                <i class="bi bi-people text-primary d-block mb-2" style="font-size: 1.5rem;"></i>
+                                <small>Collaborate with classmates ethically</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 
----
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="mb-3">
+                    <i class="bi bi-cloud-fill me-2"></i>
+                    CSP451 - Cloud Computing
+                </h4>
+                <p class="mb-2"><strong>Fall 2025 | Seneca Polytechnic</strong></p>
+                <p class="mb-3">Your comprehensive guide to mastering cloud computing technologies</p>
+                <p class="small text-muted">
+                    <i class="bi bi-calendar3 me-1"></i>
+                    Last Updated: September 2025
+                </p>
+                <div class="mt-3">
+                    <a href="https://github.com/DC-Seneca/CSP451-2025F-Students" class="text-light me-3" target="_blank">
+                        <i class="bi bi-github"></i> Repository
+                    </a>
+                    <a href="mailto:david.chan2@senecapolytechnic.ca" class="text-light">
+                        <i class="bi bi-envelope"></i> Contact Instructor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-## 📚 Course Materials
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-### 📋 Assignment Briefs
-Complete assignment instructions and requirements for each week:
-
-| Week | Topic | Assignment Brief |
-|------|-------|------------------|
-| **1** | Introduction to GitHub and Version Control | [Week 1 Assignment Brief](Assignment Brief/Week 1/Week 1 - Assignment Brief) |
-| **2** | Advanced Git Branching and Collaboration | [Week 2 Assignment Brief](Assignment Brief/Week 2/Week 2 - Assignment Brief) |
-| **3** | Markdown Documentation and README Files | [Week 3 Assignment Brief](Assignment Brief/Week 3/Week 3 - Assignment Brief) |
-| **4** | Azure Fundamentals and Virtual Networks | [Week 4 Assignment Brief](Assignment Brief/Week 4/Week 4 - Assignment Brief) |
-| **5** | Network Security Groups and Route Tables | [Week 5 Assignment Brief](Assignment Brief/Week 5/Week 5 - Assignment Brief) |
-| **6** | Azure Virtual Machines and Linux Setup | [Week 6 Assignment Brief](Assignment Brief/Week 6/Week 6 - Assignment Brief) |
-| **7** | ARM Templates and Infrastructure as Code | [Week 7 Assignment Brief](Assignment Brief/Week 7/Week 7 - Assignment Brief) |
-| **8** | Azure Firewall and Advanced Networking | [Week 8 Assignment Brief](Assignment Brief/Week 8/Week 8 - Assignment Brief) |
-| **9** | **Demo Presentation** | [Week 9 Assignment Brief](Assignment Brief/Week 9/Week 9 - Assignment Brief) |
-| **10** | Docker Fundamentals and Containerization | [Week 10 Assignment Brief](Assignment Brief/Week 10/Week 10 - Assignment Brief) |
-| **11** | Docker Images and Registry Management | [Week 11 Assignment Brief](Assignment Brief/Week 11/Week 11 - Assignment Brief) |
-| **12** | CI/CD with GitHub Actions | [Week 12 Assignment Brief](Assignment Brief/Week 12/Week 12 - Assignment Brief) |
-| **13** | Final Project Development | [Week 13 Assignment Brief](Assignment Brief/Week 13/Week 13 - Assignment Brief) |
-| **14** | **Final Project Due** | [Week 14 Assignment Brief](Assignment Brief/Week 14/Week 14 - Assignment Brief) |
-
-### 📖 Weekly Study Notes
-Essential concepts and preparation materials for each week:
-
-| Week | Topic | Study Notes |
-|------|-------|-------------|
-| **1** | GitHub and Version Control Basics | [Week 1 Student Notes](Weekly Notes/Week 1/Week 1 - Student Notes) |
-| **2** | Git Branching and Collaboration | [Week 2 Student Notes](Weekly Notes/Week 2/Week 2 - Student Notes) |
-| **3** | Documentation and Markdown | [Week 3 Student Notes](Weekly Notes/Week 3/Week 3 - Student Notes) |
-| **4** | Azure Virtual Networks | [Week 4 Student Notes](Weekly Notes/Week 4/Week 4 - Student Notes) |
-| **5** | Network Security and Routing | [Week 5 Student Notes](Weekly Notes/Week 5/Week 5 - Student Notes) |
-| **6** | Virtual Machines and Linux | [Week 6 Student Notes](Weekly Notes/Week 6/Week 6 - Student Notes) |
-| **7** | Infrastructure as Code | [Week 7 Student Notes](Weekly Notes/Week 7/Week 7 - Student Notes) |
-| **8** | Azure Firewall and Security | [Week 8 Student Notes](Weekly Notes/Week 8/Week 8 - Student Notes) |
-| **9** | Presentation Skills | [Week 9 Student Notes](Weekly Notes/Week 9/Week 9 - Student Notes) |
-| **10** | Docker and Containers | [Week 10 Student Notes](Weekly Notes/Week 10/Week 10 - Student Notes) |
-| **11** | Container Management | [Week 11 Student Notes](Weekly Notes/Week 11/Week 11 - Student Notes) |
-| **12** | CI/CD Pipelines | [Week 12 Student Notes](Weekly Notes/Week 12/Week 12 - Student Notes) |
-| **13** | Project Development | [Week 13 Student Notes](Weekly Notes/Week 13/Week 13 - Student Notes) |
-| **14** | Project Completion | [Week 14 Student Notes](Weekly Notes/Week 14/Week 14 - Student Notes) |
-
----
-
-## 📂 Additional Resources
-
-### 📚 Reference Materials
-- [Cloud Computing Job Interview Guide](References/Cloud_Computing_Job_Interview_Preparation_Guide_(AI-Era_Edition).pdf)
-- [Azure ARM Template Automation Guide](References/CSP451-Other-reference_Azure_ARM_Template_-Automation.pdf)
-- [Azure Multi-Web App Setup Guide](References/CSP451-Other-reference_Azure_Multi-Web_App_Setup_Guide.pdf)
-- [Final Project Reference](References/CSP451-Other-reference_Final-Project-Reference)
-
-### 🎯 Important Guidelines
-- [📅 Fall 2025 Course Addendum](Fall 2025 Course Addendum) - Complete course schedule and policies
-- [📝 Quick Reference - Submission Requirements](Quick Reference - Submission Requirements) - Assignment submission guidelines
-
----
-
-## 🎓 Course Information
-
-**Course Code:** CSP451  
-**Course Name:** Cloud Computing  
-**Semester:** Fall 2025  
-**Instructor:** David Chan  
-**Contact:** david.chan2@senecapolytechnic.ca
-
-### 📅 Key Dates
-- **Course Start:** September 1, 2025
-- **Demo Presentation:** Week 9
-- **Final Project Due:** Week 14 (December 1-7, 2025)
-
-### 💰 Budget Management
-- **Initial Credit:** 50-100 Azure credits
-- **Success Criteria:** Maintain positive balance at semester end
-- **Full marks awarded for proper budget management**
-
-### 📤 Submission Format
-- **Format:** PDF documents with screenshots and explanations
-- **Platform:** Course management system
-- **GitHub:** No need to add instructor as collaborator
-- **Presentations:** Unlisted YouTube videos
-
----
-
-## 🚀 Getting Started
-
-1. **Review** the [Course Addendum](Fall 2025 Course Addendum) for complete schedule
-2. **Check** the [Submission Requirements](Quick Reference - Submission Requirements) guide
-3. **Start** with Week 1 materials:
-   - [Week 1 Assignment Brief](Assignment Brief/Week 1/Week 1 - Assignment Brief)
-   - [Week 1 Student Notes](Weekly Notes/Week 1/Week 1 - Student Notes)
-4. **Explore** the References section for additional learning resources
-
----
-
-## 📞 Support
-
-If you need assistance:
-- Review the course materials and reference guides
-- Check the submission requirements for clarity
-- Contact the instructor during office hours
-- Collaborate with classmates following academic integrity guidelines
-
----
-
-<div class="footer">
-  <p><strong>CSP451 - Cloud Computing | Fall 2025 | Seneca Polytechnic</strong></p>
-  <p><em>Last Updated: September 2025</em></p>
-</div>
-
-<style>
-.quick-links {
-  margin: 20px 0;
-  text-align: center;
-}
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  margin: 5px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.btn-primary {
-  background-color: #007bff;
-  color: white;
-}
-.btn-secondary {
-  background-color: #6c757d;
-  color: white;
-}
-.btn:hover {
-  opacity: 0.8;
-}
-.footer {
-  margin-top: 50px;
-  text-align: center;
-  color: #6c757d;
-  border-top: 1px solid #dee2e6;
-  padding-top: 20px;
-}
-table {
-  width: 100%;
-  margin: 20px 0;
-}
-table th, table td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-table th {
-  background-color: #f8f9fa;
-  font-weight: bold;
-}
-</style>
+</body>
+</html>
