@@ -17,16 +17,11 @@ course:
   start_date: "September 1, 2025"
 
 # GitHub Pages and Jekyll settings
-theme: minima
+# Using custom layout - no theme needed
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-# Navigation menu
-header_pages:
-  - "Fall 2025 Course Addendum.md"
-  - "Quick Reference - Submission Requirements.md"
 
 # Build settings
 markdown: kramdown
@@ -66,25 +61,10 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "David Chan"
-  - scope:
-      path: ""
       type: "pages"
     values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "assignments"
-    values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "notes"
-    values:
-      layout: "page"
+      layout: "course"
+      author: "David Chan"
 
 # SEO and social settings
 social:
