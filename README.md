@@ -1,7 +1,20 @@
-# CSP451 - Cloud Computing (Fall 2025)
-## Student Course Materials
+---
+layout: course
+title: CSP451 - Cloud Computing (Fall 2025) - README
+---
 
-Welcome to CSP451 - Cloud Computing! This repository contains all the materials you need for the Fall 2025 semester.
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center mb-5">
+                <h1 class="display-4 text-primary mb-3">
+                    <i class="bi bi-cloud-fill me-3"></i>CSP451 - Cloud Computing (Fall 2025)
+                </h1>
+                <h2 class="text-muted">Student Course Materials</h2>
+                <p class="lead">Welcome to CSP451 - Cloud Computing! This repository contains all the materials you need for the Fall 2025 semester.</p>
+            </div>
+        </div>
+    </div>
 
 ### 📁 Repository Structure
 
@@ -62,8 +75,32 @@ Additional resources and documentation
 - **Email**: Response within 24-48 hours
 - **Lab Assistants**: Available during lab hours
 
-Good luck with CSP451! 🎓
+    <div class="alert alert-success text-center mt-4" role="alert">
+        <h4><i class="bi bi-mortarboard-fill me-2"></i>Good luck with CSP451!</h4>
+        <p class="mb-0">You have everything you need to succeed. Let's build amazing cloud solutions! 🚀</p>
+    </div>
 
----
+</div>
 
-*Course materials organized for Fall 2025 semester | Sept 1 - Dec 7, 2025*
+<!-- Back to Home Button -->
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <a href="../" class="btn btn-primary btn-lg">
+                <i class="bi bi-house-fill me-2"></i>
+                Back to Course Home
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center">
+            <small class="text-muted">
+                <i class="bi bi-calendar3 me-1"></i>
+                Course materials organized for Fall 2025 semester | Sept 1 - Dec 7, 2025
+            </small>
+        </div>
+    </div>
+</div>
