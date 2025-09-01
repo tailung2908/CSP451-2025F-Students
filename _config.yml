@@ -1,0 +1,104 @@
+# CSP451 - Cloud Computing Course Site Configuration
+
+# Site settings
+title: "CSP451 - Cloud Computing"
+description: "Fall 2025 Student Resources - Seneca Polytechnic"
+author: "David Chan"
+email: "david.chan2@senecapolytechnic.ca"
+baseurl: "/CSP451-2025F-Students" # Repository name
+url: "https://dc-seneca.github.io" # GitHub Pages URL
+
+# Course information
+course:
+  code: "CSP451"
+  name: "Cloud Computing" 
+  semester: "Fall 2025"
+  instructor: "David Chan"
+  start_date: "September 1, 2025"
+
+# GitHub Pages and Jekyll settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation menu
+header_pages:
+  - "Fall 2025 Course Addendum.md"
+  - "Quick Reference - Submission Requirements.md"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Include/Exclude files
+include:
+  - "_pages"
+  - "Assignment Brief"
+  - "Weekly Notes"
+  - "References"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+
+# Collections for better organization
+collections:
+  assignments:
+    output: true
+    permalink: /:collection/:name/
+  notes:
+    output: true 
+    permalink: /:collection/:name/
+
+# Default layout settings
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "David Chan"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "page"
+
+# SEO and social settings
+social:
+  name: David Chan
+  links:
+    - https://github.com/DC-Seneca
+
+# GitHub repository settings
+github:
+  repository_url: "https://github.com/DC-Seneca/CSP451-2025F-Students"
+
+# Enable GitHub Pages
+github_pages:
+  enabled: true
+
+# Timezone
+timezone: America/Toronto
