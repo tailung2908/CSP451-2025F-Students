@@ -1,0 +1,63 @@
+# CSP451 Student Repository .gitignore
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files
+*~
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Local Development
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Student Work (keep private)
+# Students should maintain their own repositories
+# This repository is for course materials only
+
+# Backup Files
+*.bak
+*.backup
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+
+# Documentation builds
+_site/
+.jekyll-cache/
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.fuse_hidden*
