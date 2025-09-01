@@ -1,10 +1,6 @@
----
-layout: course
-title: CSP451 - Quick Reference - Submission Requirements
-subtitle: Essential Guidelines for Students
-page_header: true
-page_icon: file-earmark-check-fill
----
+# CSP451 - Quick Reference: Submission Requirements
+
+## Essential Guidelines for Students
 
 ### 📋 Assignment Submissions (CheckPoints 1-10, Milestones, Final Project)
 

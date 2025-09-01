@@ -1,10 +1,6 @@
----
-layout: course
-title: CSP451 - Course Addendum and Schedule
-subtitle: Fall 2025 Semester
-page_header: true
-page_icon: calendar-check-fill
----
+# CSP451 - Course Addendum and Schedule
+
+## Fall 2025 Semester
 
 
 ## 📅 Course Schedule

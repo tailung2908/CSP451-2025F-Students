@@ -1,10 +1,5 @@
----
-layout: course
-title: CSP451 - Cloud Computing (Fall 2025)
-subtitle: Student Course Materials
-page_header: true
-page_icon: cloud-fill
----
+# CSP451 - Cloud Computing (Fall 2025)
+## Student Course Materials
 
 Welcome to CSP451 - Cloud Computing! This repository contains all the materials you need for the Fall 2025 semester.
 
