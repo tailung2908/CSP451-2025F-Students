@@ -1,19 +1,10 @@
 ---
 layout: course
 title: GitHub Pages Setup Instructions
+subtitle: Configuration Guide
+page_header: true
+page_icon: globe
 ---
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="text-center mb-5">
-                <h1 class="display-4 text-primary mb-3">
-                    <i class="bi bi-globe me-3"></i>GitHub Pages Setup Instructions
-                </h1>
-                <h2 class="text-muted">Configuration Guide</h2>
-            </div>
-        </div>
-    </div>
 
 ## Manual Setup Steps
 
@@ -70,27 +61,6 @@ Students will access a professional course website with:
 ✅ **Mobile Access** - Works on phones, tablets, and computers  
 ✅ **Always Updated** - Automatically reflects repository changes  
 
-</div>
+---
 
-<!-- Back to Home Button -->
-<div class="container mb-4">
-    <div class="row">
-        <div class="col-12 text-center">
-            <a href="../" class="btn btn-primary btn-lg">
-                <i class="bi bi-house-fill me-2"></i>
-                Back to Course Home
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-12 text-center">
-            <div class="alert alert-success" role="alert">
-                <i class="bi bi-check-circle-fill me-2"></i>
-                <strong>Next Step:</strong> Enable GitHub Pages in repository settings to activate the student course website! 🎓
-            </div>
-        </div>
-    </div>
-</div>
+**Next Step**: Enable GitHub Pages in repository settings to activate the student course website! 🎓

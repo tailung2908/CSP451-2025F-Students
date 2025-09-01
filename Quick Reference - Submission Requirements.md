@@ -1,19 +1,10 @@
 ---
 layout: course
 title: CSP451 - Quick Reference - Submission Requirements
+subtitle: Essential Guidelines for Students
+page_header: true
+page_icon: file-earmark-check-fill
 ---
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="text-center mb-5">
-                <h1 class="display-4 text-primary mb-3">
-                    <i class="bi bi-file-earmark-check-fill me-3"></i>CSP451 - Quick Reference: Submission Requirements
-                </h1>
-                <h2 class="text-muted">Essential Guidelines for Students</h2>
-            </div>
-        </div>
-    </div>
 
 ### 📋 Assignment Submissions (CheckPoints 1-10, Milestones, Final Project)
 
@@ -72,27 +63,6 @@ title: CSP451 - Quick Reference - Submission Requirements
 - **Backup**: Keep Git repos and local copies
 - **Help**: Office hours Tues/Thurs 2-4 PM
 
-</div>
+---
 
-<!-- Back to Home Button -->
-<div class="container mb-4">
-    <div class="row">
-        <div class="col-12 text-center">
-            <a href="../" class="btn btn-primary btn-lg">
-                <i class="bi bi-house-fill me-2"></i>
-                Back to Course Home
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-12 text-center">
-            <small class="text-muted">
-                <i class="bi bi-calendar3 me-1"></i>
-                Last Updated: September 2025
-            </small>
-        </div>
-    </div>
-</div>
+*Last Updated: September 2025*

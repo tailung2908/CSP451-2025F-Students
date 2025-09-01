@@ -1,20 +1,10 @@
 ---
 layout: course
 title: CSP451 - Course Addendum and Schedule
+subtitle: Fall 2025 Semester
+page_header: true
+page_icon: calendar-check-fill
 ---
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="text-center mb-5">
-                <h1 class="display-4 text-primary mb-3">
-                    <i class="bi bi-calendar-check-fill me-3"></i>CSP451 - Course Addendum and Schedule
-                </h1>
-                <h2 class="text-muted">Fall 2025 Semester</h2>
-            </div>
-        </div>
-    </div>
-
 
 
 ## 📅 Course Schedule
@@ -337,17 +327,3 @@ Upon successful completion of this course, students will be able to:
 - **Lab Access**: Available 24/7 through Azure Portal
 - **Backup Work**: Maintain Git repositories and local copies
 - **Help Available**: Office hours, discussion forum, lab assistants
-
-</div>
-
-<!-- Back to Home Button -->
-<div class="container mb-4">
-    <div class="row">
-        <div class="col-12 text-center">
-            <a href="../" class="btn btn-primary btn-lg">
-                <i class="bi bi-house-fill me-2"></i>
-                Back to Course Home
-            </a>
-        </div>
-    </div>
-</div>
