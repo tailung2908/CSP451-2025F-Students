@@ -57,7 +57,7 @@
 - **Submission Platform**: Blackboard only
 - **Late Policy**: 10% per day, max 3 days
 - **Backup**: Keep Git repos and local copies
-- **Help**: Office hours Tues/Thurs 2-4 PM
+- **Help**: Office hours Thurs/Fri 4-6 PM
 
 ---
 

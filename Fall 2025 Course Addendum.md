@@ -55,11 +55,10 @@
 - Satisfactory Azure budget management
 
 ### Assessment Schedule Notes
-- **CheckPoints 1-7**: Due by 11:59 PM on Friday of each respective week
-- **CheckPoints 8-10**: Due by 11:59 PM on Friday of each respective week
+- **CheckPoints 1-10**: Due by 11:59 PM on Monday of each respective week
 - **Demo Presentation**: Scheduled during Week 9 lab sessions
-- **Milestones**: Due by 11:59 PM on Friday, November 7, 2025
-- **Final Project**: Due by 11:59 PM on Friday, December 5, 2025
+- **Milestones**: To-be-announced
+- **Final Project**: To-be-announced
 
 ---
 
@@ -121,10 +120,9 @@
 - Plagiarism results in zero grade
 
 ### Getting Help
-- Office hours: Tuesdays/Thursdays 2-4 PM
+- Office hours: Thursdays/Friday 5-6 PM
 - Discussion forum on Blackboard
-- Email response within 24 hours
-- Lab assistants available during lab hours
+- Email response within 48 hours
 
 ---
 
@@ -133,7 +131,7 @@
 ### Initial Credit Allocation
 - **Initial Credit**: Students will be given an initial budget of **50 or 100 credits** at the beginning of the semester
 - **Credit Type**: Azure for Education credits or Azure free tier credits
-- **Credit Expiration**: Credits expire at the end of the academic year (May 2026)
+- **Credit Expiration**: Credits expire at the end of the semester
 - **Additional Credits**: No additional credits will be provided for overspend
 
 ### Budget Evaluation Criteria
@@ -143,11 +141,6 @@
 
 ### Requirements
 Students must demonstrate responsible cloud resource management throughout the course:
-
-#### Budget Setup (Week 1)
-- Create budget alert at 50%, 75%, and 90% of allocated credits
-- Configure email notifications for budget thresholds
-- Set up cost analysis views in Azure Portal
 
 #### Weekly Monitoring
 - Track spending by resource group
@@ -161,12 +154,6 @@ Students must demonstrate responsible cloud resource management throughout the c
 - Choose correct storage tiers
 - Clean up after labs
 
-#### Monthly Reporting
-- Submit cost analysis dashboard screenshots
-- Explain any budget overruns
-- Document cost-saving measures implemented
-- Compare actual vs. estimated costs
-
 ### Grading Criteria
 - **Credit Balance Evaluation (100%)**: 
   - **Full Marks**: Remaining credit balance > $0 at semester end
@@ -177,18 +164,6 @@ Students must demonstrate responsible cloud resource management throughout the c
 - **Resource Cleanup**: Proper deletion of unused resources (monitored)
 - **Cost Reports**: Weekly submission of cost tracking (required)
 - **Optimization**: Evidence of cost-saving implementations (encouraged)
-
-### Tips for Success
-- Always use Dev/Test pricing when available
-- Delete resources immediately after labs
-- Use Azure Calculator before deployments
-- Set up automated shutdown for VMs
-- Monitor costs daily through Azure Portal
-- Set up Azure Budget alerts
-- Use Azure Advisor recommendations
-- Choose appropriate resource sizes
-- Delete snapshots and unused disks
-- Monitor bandwidth usage
 
 ---
 
@@ -274,14 +249,6 @@ Upon successful completion of this course, students will be able to:
 
 ## ⚠️ Important Notes
 
-### Azure Credits Management
-- **Initial Allocation**: Students receive 50 or 100 Azure credits at semester start
-- **Success Criteria**: Maintain credit balance > $0 by semester end for full marks
-- **Monitoring Required**: Track usage carefully throughout semester via Azure Portal
-- **Credit Expiration**: Credits expire at end of academic year (May 2026)
-- **No Additional Credits**: Additional credits not provided for overspend - manage wisely!
-- **Grade Impact**: Budget management worth 10% of final course grade
-
 ### Lab Environment
 - All labs must be completed in Azure
 - Local development is supplementary only
@@ -319,7 +286,7 @@ Upon successful completion of this course, students will be able to:
 - **Make-up Sessions**: Available by appointment for missed lab time
 
 ### Important Reminders
-- **Azure Credits**: Monitor usage throughout semester (expire May 2026)
+- **Azure Credits**: Monitor usage throughout semester
 - **Lab Access**: Available 24/7 through Azure Portal
 - **Backup Work**: Maintain Git repositories and local copies
 - **Help Available**: Office hours, discussion forum, lab assistants
