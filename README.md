@@ -58,7 +58,7 @@ Additional resources and documentation
 ### 📞 Need Help?
 
 - **Discussion Forum**: Blackboard
-- **Office Hours**: Tuesdays/Thursdays 2-4 PM
+- **Office Hours**: Thurs/Fri 4-6 PM
 - **Email**: Response within 24-48 hours
 - **Lab Assistants**: Available during lab hours
 
