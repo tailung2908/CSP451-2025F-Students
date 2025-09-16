@@ -10,3 +10,25 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 });
 </script>
 
+<!-- Username input field -->
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+<!-- Password input field -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+
+<!-- Submit button -->
+<button type="submit">Login</button>
+
+<script>
+  // Validate login form before submission
+  document.getElementById('loginForm').addEventListener('submit', function(e) {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      if (!username || !password) {
+          alert('Please fill in all fields');
+          e.preventDefault(); // Prevent form from submitting if validation fails
+      }
+  });
+</script>
