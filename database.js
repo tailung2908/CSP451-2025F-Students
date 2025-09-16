@@ -21,3 +21,19 @@ connection.connect((err) => {
 // Export the connection
 module.exports = connection;
 
+// Query helper functions
+// ----------------------
+
+// Get all users
+function getUsers(callback) {
+    connection.query('SELECT * FROM users', callback);
+}
+
+// Add a new user
+function addUser(username, password, callback) {
+    const sql = 'INSERT INTO users (username, password) VALUES (?, ?)';
+    connection.query(sql, [username, password], callback);
+}
+
+// Export query functions
+module.exports = { connection, getUsers, addUser };
