@@ -69,3 +69,4 @@ You have everything you need to succeed. Let's build amazing cloud solutions! ðŸ
 ---
 
 *Course materials organized for Fall 2025 semester | Sept 1 - Dec 7, 2025*
+Update 2: Database branch adds connection setup details.
