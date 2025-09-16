@@ -17,3 +17,20 @@ router.get('/users/:id', (req, res) => {
 
 module.exports = router;
 
+// POST add a new user
+router.post('/users', (req, res) => {
+    const { username, password } = req.body;
+    // Example: save to database (pseudo-code)
+    res.send(`User ${username} added`);
+});
+
+// PUT update user
+router.put('/users/:id', (req, res) => {
+    const { username } = req.body;
+    res.send(`User ${req.params.id} updated with username ${username}`);
+});
+
+// DELETE remove user
+router.delete('/users/:id', (req, res) => {
+    res.send(`User ${req.params.id} deleted`);
+});
