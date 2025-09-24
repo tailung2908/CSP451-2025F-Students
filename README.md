@@ -1,24 +1,31 @@
 # CSP451 - Cloud Computing (Fall 2025)
+
 ## Student Course Materials
 
 Welcome to CSP451 - Cloud Computing! This repository contains all the materials you need for the Fall 2025 semester.
 
 ### 📁 Repository Structure
 
-#### **Assignment Brief/** 
+#### **Assignment Brief/**
+
 Your assignment headquarters
+
 - **Fall 2025 Course Addendum.md** - Complete course schedule, policies, and requirements
 - **Quick Reference - Submission Requirements.md** - Essential submission guidelines
 - **Week 1-14/** - Detailed assignment briefs for each week
 
 #### **Weekly Notes/**
+
 Your study companion
+
 - **Week 1-14/** - Comprehensive study notes and guidance
 - Includes practical commands, code samples, and troubleshooting tips
 - Review these before starting each week's assignment
 
 #### **References/**
+
 Additional resources and documentation
+
 - Azure guides and templates
 - Supplementary learning materials
 
@@ -47,13 +54,13 @@ Additional resources and documentation
 
 ### 📊 Assessment Overview
 
-| Component | Weight | Key Dates |
-|-----------|--------|-----------|
-| CheckPoints 1-10 | 40% | Weekly (Fridays) |
-| Demo Presentation | 10% | Week 9 |
-| Milestones 1 & 2 | 20% | Week 10 |
-| Final Project | 20% | Week 14 |
-| Budget Management | 10% | Ongoing |
+| Component         | Weight | Key Dates        |
+| ----------------- | ------ | ---------------- |
+| CheckPoints 1-10  | 40%    | Weekly (Fridays) |
+| Demo Presentation | 10%    | Week 9           |
+| Milestones 1 & 2  | 20%    | Week 10          |
+| Final Project     | 20%    | Week 14          |
+| Budget Management | 10%    | Ongoing          |
 
 ### 📞 Need Help?
 
@@ -68,8 +75,7 @@ You have everything you need to succeed. Let's build amazing cloud solutions! �
 
 ---
 
-*Course materials organized for Fall 2025 semester | Sept 1 - Dec 7, 2025*
+_Course materials organized for Fall 2025 semester | Sept 1 - Dec 7, 2025_
 
 Update 1: User authentication branch adds login instructions.
 Update 2: Database branch adds connection setup details.
-
