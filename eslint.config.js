@@ -1,5 +1,4 @@
-cat > eslint.config.js <<'EOF'
-export default [
+module.exports = [
   {
     files: ["**/*.js"],
     languageOptions: {
@@ -12,4 +11,3 @@ export default [
     }
   }
 ];
-EOF
