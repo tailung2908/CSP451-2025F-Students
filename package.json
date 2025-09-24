@@ -1,0 +1,27 @@
+{
+  "name": "csp451-2025f-students",
+  "version": "1.0.0",
+  "description": "Welcome to CSP451 - Cloud Computing! This repository contains all the materials you need for the Fall 2025 semester.",
+  "main": "database.js",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tailung2908/CSP451-2025F-Students.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tailung2908/CSP451-2025F-Students/issues"
+  },
+  "homepage": "https://github.com/tailung2908/CSP451-2025F-Students#readme",
+  "devDependencies": {
+    "eslint": "^9.36.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.6.2"
+  }
+}
