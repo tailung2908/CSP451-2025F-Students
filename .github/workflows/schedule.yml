@@ -1,13 +1,6 @@
-name: Daily Dependency & Security Check
-
-on:
-  schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight UTC
-  workflow_dispatch: # Allows manual triggering
-
 jobs:
   audit:
-    name: Dependency & Security Audit 
+    name: Dependency & Security Audit
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,9 +17,15 @@ jobs:
       - name: Run security audit
         run: npm audit --json > audit.json
 
+      - name: Check for vulnerabilities
+        id: check_vuln
+        run: |
+          VULN_COUNT=$(jq '.metadata.vulnerabilities.total' audit.json)
+          echo "VULN_COUNT=$VULN_COUNT" >> $GITHUB_ENV
+
       - name: Create GitHub issue if vulnerabilities found
+        if: env.VULN_COUNT != '0'
         uses: peter-evans/create-issue-from-file@v4
-        if: success() && (jq '.metadata.vulnerabilities.total' audit.json) != 0
         with:
           title: 'Dependency Vulnerabilities Found'
           content-filepath: audit.json
