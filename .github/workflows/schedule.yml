@@ -2,8 +2,8 @@ name: Daily Dependency & Security Check
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every day at midnight UTC
-  workflow_dispatch:    # Allows manual triggering
+    - cron: '0 0 * * *' # Runs every day at midnight UTC
+  workflow_dispatch: # Allows manual triggering
 
 jobs:
   audit:
@@ -27,6 +27,6 @@ jobs:
         uses: peter-evans/create-issue-from-file@v4
         if: success() && (jq '.metadata.vulnerabilities.total' audit.json) != 0
         with:
-          title: "Dependency Vulnerabilities Found"
+          title: 'Dependency Vulnerabilities Found'
           content-filepath: audit.json
           labels: security, automated
