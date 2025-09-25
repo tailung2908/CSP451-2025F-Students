@@ -79,3 +79,4 @@ _Course materials organized for Fall 2025 semester | Sept 1 - Dec 7, 2025_
 
 Update 1: User authentication branch adds login instructions.
 Update 2: Database branch adds connection setup details.
+![Deploy](https://github.com/tailung2908/CSP451-2025F-Students/actions/workflows/deploy.yml/badge.svg)
