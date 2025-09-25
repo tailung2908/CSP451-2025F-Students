@@ -7,6 +7,7 @@
     "lint": "eslint .",
     "format": "prettier --check .",
     "test": "jest --coverage"
+    "build": "echo 'No build step defined yet'"
   },
   "repository": {
     "type": "git",
