@@ -1,0 +1,21 @@
+name: "Reusable Lint & Prettier"
+description: "A composite action to set up Node.js, install dependencies, run ESLint, and Prettier"
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run ESLint
+      run: npx eslint . --ext .js,.jsx,.ts,.tsx
+
+    - name: Run Prettier check
+      run: npx prettier --check .
