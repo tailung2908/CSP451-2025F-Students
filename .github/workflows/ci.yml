@@ -22,12 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run ESLint
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx
-
-      - name: Run Prettier check
-        run: npx prettier --check .
-
+      - name: Run Lint & Prettier
+        uses: ./.github/actions/reusable-lint-prettier
+ 
       - name: Run unit tests with coverage
         run: npm test -- --coverage --passWithNoTests
 
